@@ -15,6 +15,23 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+              sourceMap: true,
+            },
+          },
+          'postcss-loader',
+          'sass-loader',
+        ],
+        include: /\.module.s[ac]ss$/i,
+      },
     ],
   },
   resolve: {
