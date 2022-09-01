@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: gray;
+  margin-bottom: 20px;
+}
+
+.link {
+  margin-left: 20px;
+  font-size: 20px;
+  &:hover {
+    color: darkgray;
+    transition: 0.3s;
+  }
+}
