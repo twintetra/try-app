@@ -1,5 +1,13 @@
 import React from 'react';
+import {Route, Routes} from 'react-router-dom';
+import {MainPage} from './pages/MainPage';
+import {FavouritesPage} from './pages/FavouritesPage';
 
-const App = () => <h1>My React and TypeScript App!</h1>;
-
-export default App;
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/favourites" element={<FavouritesPage />} />
+    </Routes>
+  );
+}
