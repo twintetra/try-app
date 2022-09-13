@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+}
+
+.searchContainer {
+  position: relative;
+  width: 400px;
+}
+
+.searchInput {
+  border-radius: 4px;
+  width: 100%;
+  border: 2px solid gray;
+  height: 30px;
+  padding: 5px;
+}
+
+.searchDropdown {
+  position: absolute;
+  width: 100%;
+  top: 35px;
+  border-radius: 4px;
+  border: 2px solid gray;
+  height: 400px;
+  padding: 5px;
+}
