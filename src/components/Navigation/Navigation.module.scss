@@ -1,8 +1,10 @@
+@import "src/styles/main.module";
+
 .navigation {
   display: flex;
   align-items: center;
   height: 50px;
-  background: gray;
+  background: $c_grey;
   margin-bottom: 20px;
 }
 
@@ -10,7 +12,7 @@
   margin-left: 20px;
   font-size: 20px;
   &:hover {
-    color: darkgray;
+    color: $c_light_grey;
     transition: 0.3s;
   }
 }

@@ -1,0 +1,39 @@
+@import "src/styles/main.module";
+
+.repoCard {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 3px 3px 10px $c_grey;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.cardName {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.extraInformation {
+  color: $c_light_grey;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.addButton {
+  background-color: $c_light_grey;
+}
+
+.removeButton {
+  background-color: $c_grey;
+}

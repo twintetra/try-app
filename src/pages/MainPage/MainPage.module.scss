@@ -1,7 +1,11 @@
+@import "src/styles/main.module";
+
 .container {
   display: flex;
+  margin: 0 auto;
   height: 100%;
   justify-content: center;
+  width: 600px;
 }
 
 .error {
@@ -10,25 +14,27 @@
 
 .searchContainer {
   position: relative;
-  width: 400px;
+  width: 100%
 }
 
 .searchInput {
   border-radius: 4px;
   width: 100%;
-  border: 2px solid gray;
+  border: 2px solid $c_grey;
   height: 30px;
   padding: 5px;
 }
 
 .searchDropdown {
   position: absolute;
+  background: #f5f4f4;
+  border-radius: 5px;
   overflow-y: scroll;
   list-style: none;
   width: 100%;
   top: 35px;
   max-height: 400px;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px $c_grey;
 }
 
 .listLoader {
@@ -44,6 +50,6 @@
   padding: 5px;
 
   &:hover {
-    background: lightgray;
+    background: $c_light_grey;
   }
 }
